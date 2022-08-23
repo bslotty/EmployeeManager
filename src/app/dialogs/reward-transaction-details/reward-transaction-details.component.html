@@ -1,0 +1,28 @@
+<app-section-header [title]="title"
+    [buttons]="header_actions"
+    (event)="header_event($event)"></app-section-header>
+
+<div class="">
+    <form [formGroup]="data.form">
+        <div *ngFor="let control of data.control_map">
+            <app-form-field [field]="control"></app-form-field>
+        </div>
+    </form>
+</div>
+
+
+<hr class="mb-3" *ngIf="!data.form.get('item').disabled">
+
+<div *ngIf="!balanceValid() && !data.form.get('item').disabled" class="alert alert-warning">
+    <label class="alert-text">Insufficent Rewards Points</label>
+
+</div>
+
+<div class="row justify-content-end align-items-center g-3" *ngIf="!data.form.get('item').disabled">
+
+    <div class="col-auto">
+        <a mat-raised-button color="accent" (click)="save()" [disabled]="!balanceValid()">
+            <label class="mat-button">Save</label>
+        </a>
+    </div>
+</div>

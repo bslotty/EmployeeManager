@@ -1,0 +1,48 @@
+<div class="row justify-content-center align-items-center g-3">
+    <div class="col d-flex">
+        <label class="mat-headline">{{ title }}</label>
+        <label class="mat-title ms-5">{{ startDate | date:"MMM d" }} - {{ endDate | date:"MMM d" }}</label>
+    </div>
+
+    <div class="col-auto"
+        *ngIf="headerButtons.length > 0">
+        <app-button-bar [buttons]="headerButtons"
+            (event)="emit($event)">
+        </app-button-bar>
+    </div>
+
+</div>
+
+<hr class="mb-2">
+
+<!-- <div class="d-none d-lg-block">
+    <div class="row justify-content-center align-items-start g-2">
+        <div class="col-12 col-sm-7 col-lg"
+            *ngFor="let day of week1">
+            <app-time-sheet-day [entry]="day"></app-time-sheet-day>
+        </div>
+    </div>
+
+col-6 col-sm-3
+col-12 col-sm-7 col-lg
+
+    <div class="row justify-content-center align-items-start g-2 mt-3">
+        <div class="col-12 col-lg"
+            *ngFor="let day of week2">
+            <app-time-sheet-day [entry]="day"></app-time-sheet-day>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="d-block d-lg-none">
+
+</div>
+
+
+<div *ngFor="let weekEntries of weekList" class="row justify-content-center align-items-start g-2 mt-3">
+    <div class="col-12 col-sm-7 col-lg"
+        *ngFor="let ent of weekEntries">
+        <app-time-sheet-day [entry]="ent"></app-time-sheet-day>
+    </div>
+</div>

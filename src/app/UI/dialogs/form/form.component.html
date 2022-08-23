@@ -1,0 +1,17 @@
+<app-section-header [title]="title"
+    [buttons]="header_actions"
+    (event)="header_event($event)"></app-section-header>
+
+<div *ngIf="form != undefined; else loader"
+    class="row justify-content-center align-items-center p-3">
+    <form [formGroup]="form">
+        <ng-container *ngFor="let control of control_map">
+            <app-form-field [field]="control"></app-form-field>
+        </ng-container>
+    </form>
+</div>
+
+
+<ng-template #loader>
+    <app-loader></app-loader>
+</ng-template>

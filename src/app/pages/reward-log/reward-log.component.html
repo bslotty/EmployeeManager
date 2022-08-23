@@ -1,0 +1,134 @@
+<div class="row justify-content-center align-items-center g-3">
+    <div class="col">
+        <label class="mat-headline">{{ title }}</label>
+    </div>
+
+    <div class="col-auto">
+        <label class="mat-headline {{ balance > 0 ? 'positive' : 'negative' }}">{{ balance }}</label>
+    </div>
+
+    <div class="col-auto" *ngIf="headerButtons.length > 0">
+        <app-button-bar [buttons]="headerButtons" 
+            (event)="emit($event)">
+        </app-button-bar>
+    </div>
+
+</div>
+
+<hr class="mb-2">
+
+
+
+<!-- <app-list [list]="_data._http.getFoods()"
+  [columns]="visibleColumns"
+  [actions]="listButtons"
+  (event)="listEvent($event)"></app-list> -->
+
+
+<div class="row g-3 justify-content-center align-items-center">
+    <div class="col">
+        <form [formGroup]="form">
+            <mat-form-field>
+                <input matInput
+                    type="text"
+                    formControlName="term"
+                    placeholder="Filter">
+            </mat-form-field>
+        </form>
+    </div>
+
+    <div class="col-auto">
+        <mat-paginator [pageSizeOptions]="[25, 50, 100]"
+            showFirstLastButtons></mat-paginator>
+    </div>
+</div>
+
+
+<div class="d-flex">
+    <table mat-table
+        matSort
+        [dataSource]="dataSource">
+
+        <ng-container matColumnDef="item">
+            <mat-header-cell *matHeaderCellDef
+                mat-sort-header
+                class="col-7">
+                <label class="mat-body-1"> Item </label>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row"
+                class="col-7">
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <label class="mat-body-1">{{ row.item.name }}</label>
+                </div>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="ordered on">
+            <mat-header-cell *matHeaderCellDef
+                mat-sort-header>Ordered On</mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{ row.ordered_on | date:medium }} </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="completed on">
+            <mat-header-cell *matHeaderCellDef
+                mat-sort-header>Completed On</mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{ row.completed_on | date:medium }} </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="cost">
+            <mat-header-cell *matHeaderCellDef
+                mat-sort-header>Cost</mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                <label class="mat-body-2 {{ row.item.cost > 0 ? 'positive' : 'negative' }}">{{ row.item.cost }}</label></mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="status">
+            <mat-header-cell *matHeaderCellDef
+                mat-sort-header
+                class="">
+                <label class="mat-body-1">Status</label>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row"
+                class="">
+                <label class="mat-body-1">
+                    {{ RewardTransactionStatus[row.status] }}
+                </label>
+            </mat-cell>
+        </ng-container>
+
+
+     
+
+        <ng-component matColumnDef="view">
+            <mat-header-cell *matHeaderCellDef
+                class="col-1"></mat-header-cell>
+
+            <mat-cell *matCellDef="let row"
+                class="col-auto">
+                <a mat-mini-fab
+                    (click)="view(row)"
+                    [color]="MatColor.transparent"
+                    class="mat-elevation-z0">
+                    <app-icon name="chevron-right"
+                        [color]="MatColor.primary"></app-icon>
+                </a>
+            </mat-cell>
+        </ng-component>
+
+
+
+
+        <mat-header-row *matHeaderRowDef="visibleColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: visibleColumns;"></mat-row>
+    </table>
+</div>
+
+
+<ng-template #empty>
+    <div class="alert alert-warn">
+        <label class="mat-body-2 alert-text">No Foods found</label>
+    </div>
+</ng-template>

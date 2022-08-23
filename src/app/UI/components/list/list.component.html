@@ -1,0 +1,53 @@
+<div *ngIf="dataSource?.data?.length > 0; else empty">
+    <mat-table [dataSource]="dataSource"
+        matSort>
+        <ng-component *ngFor="let column of columns">
+
+            <ng-container [matColumnDef]="column">
+                <mat-header-cell *matHeaderCellDef
+                    mat-sort-header>
+                    <label class="mat-body-2">{{ column | titleCaseAll }}</label>
+                </mat-header-cell>
+
+                <mat-cell *matCellDef="let row">
+                    <label class="mat-body-1">{{ row[column] | displayRelated:column }}</label>
+                </mat-cell>
+            </ng-container>
+
+        </ng-component>
+
+        <ng-component matColumnDef="actions">
+            <mat-header-cell *matHeaderCellDef></mat-header-cell>
+
+            <ng-container *ngFor="let action of actions">
+
+                <mat-cell *matCellDef="let row">
+                    <app-button-bar [buttons]="possible_actions" (event)="emit(row, action)"></app-button-bar>
+
+                </mat-cell>
+            </ng-container>
+
+        </ng-component>
+
+
+        <!-- Header and Row Declarations -->
+        <mat-header-row *matHeaderRowDef="full_columns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: full_columns"></mat-row>
+    </mat-table>
+
+    <div class="row justify-content-center align-items-center">
+        <mat-paginator [pageSizeOptions]="[20, 50, 100]"
+            showFirstLastButtons
+            aria-label="Select page of periodic elements">
+        </mat-paginator>
+    </div>
+</div>
+
+
+<ng-template #empty>
+    <div class="row justify-content-center align-items-center p-3">
+        <div class="col-auto">
+            <label class="mat-body-2 color-primary"> Empty List </label>
+        </div>
+    </div>
+</ng-template>

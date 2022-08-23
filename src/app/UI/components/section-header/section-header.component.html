@@ -1,0 +1,14 @@
+<div class="d-flex align-items-center">
+    <div class="flex-grow-1">
+        <label class="mat-headline">{{ title }}</label>
+    </div>
+
+    <div class="ms-auto" *ngIf="buttons.length > 0">
+        <app-button-bar [buttons]="buttons" 
+            (event)="emit($event)">
+        </app-button-bar>
+    </div>
+
+</div>
+
+<hr class="mb-2">

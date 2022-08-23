@@ -1,0 +1,78 @@
+<div class="d-flex align-items-center">
+    <div class="col">
+        <label class="mat-subheading-1">Request Vacation</label>
+    </div>
+
+    <div class="col-auto">
+        <a mat-mini-fab
+            color="transparent"
+            class="mat-elevation-z0"
+            (click)="close()">
+            <app-icon name="x"
+                color=""></app-icon>
+        </a>
+    </div>
+</div>
+
+<hr>
+
+<div *ngFor="let form of formList; index as i">
+    <form [formGroup]="form">
+        <div class="row justify-content-start align-items-center">
+            <div class="col-6">
+                <app-form-field [field]="controls[i][0]"></app-form-field>
+            </div>
+
+            <div class="col-4">
+                <app-form-field [field]="controls[i][1]"></app-form-field>
+            </div>
+
+            <div class="col-2" *ngIf="i != 0">
+                <a mat-mini-fab
+                color="transparent"
+                (click)="removeVacationDay(i)"
+                class="mat-elevation-z0">
+                <app-icon name="x"
+                    [color]="MatColor.warn"></app-icon>
+            </a>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+<div>
+</div>
+
+
+<div class="row justify-content-end align-items-center">
+    <div class="col-auto">
+        <a mat-mini-fab
+            color="transparent"
+            (click)="addVacationDay()"
+            class="mat-elevation-z0">
+            <app-icon name="plus"
+                [color]="MatColor.accent"></app-icon>
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<hr class="mb-2">
+
+
+<div class="row justify-content-end align-items-center">
+    <div class="col-auto">
+        <a mat-raised-button
+            color="accent"
+            [disabled]="!formsValid()" 
+            (click)="submit()"
+            class="px-3 py-1">
+            <label class="mat-button">Submit</label>
+        </a>
+    </div>
+</div>

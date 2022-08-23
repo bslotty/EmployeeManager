@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+@import "theme";
+
+body {
+    color: $theme-text-dark  !important;
+}
+
+nav {
+    background-color: $theme-bg-dark-surface;
+    color: $theme-text-light;
+
+    .account-card {
+        color: $theme-text-light;
+    }
+
+    .account-card {
+        color: $theme-text-light;
+
+        img {
+            filter: invert(100%) sepia(0%) saturate(7425%) hue-rotate(125deg) brightness(120%) contrast(116%);
+        }
+    }
+
+
+}
+
+
+.question-text-container {
+    min-height: 80px;
+    margin-bottom: 20px;
+}
+
+.account-profile-img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+#upload-input {
+    display: none !important;
+}
+
+
+
+
+.photo-container {
+    // width: 100%;
+    height: 250px;
+
+    position: relative;
+}
+
+.photo {
+
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.photo-name {
+    background: rgba(0, 0, 0, 0.7);
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+
+    label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        display: block;
+
+        color: $theme-text-light;
+    }
+}
+
+
+
+
+.subText {
+    color: lighten(desaturate($theme-text-dark, 50%), 30%) !important;
+    font-size: .6em;
+    font-weight: 100;
+}
+
+.text-small {
+    font-size: .9em;
+}
+
+
+
+
+
+
+.positive {
+    color:    $positive;
+}
+
+.negative {
+    color:    $negative;
+}
+
+.pending {
+    color:    $pending;
+}
+

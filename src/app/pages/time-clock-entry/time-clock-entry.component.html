@@ -1,0 +1,65 @@
+<div class="row justify-content-center align-items-center g-3">
+    <div class="col d-flex">
+        <label class="mat-headline">Time Clock Entry</label>
+    </div>
+</div>
+
+<hr class="mb-2">
+
+<div class="row justify-content-center align-items-center">
+    <form [formGroup]="form">
+        <app-form-field [field]="controls[0]"></app-form-field>
+    </form>
+</div>
+
+<div class="row justify-content-center align-items-center">
+    <div class="col-auto">
+        <a *ngIf="type == TimeClockEntryType.In"
+            mat-raised-button
+            color="primary"
+            class="px-3 py-1">
+            <label class="mat-button">In</label>
+        </a>
+
+        <a *ngIf="type == TimeClockEntryType.Out"
+            mat-stroked-button
+            color="primary"
+            class="px-3 py-1"
+            (click)="setType(TimeClockEntryType.In)">
+            <label class="mat-button">In</label>
+        </a>
+    </div>
+
+    <div class="col-auto">
+        <a *ngIf="type == TimeClockEntryType.Out"
+            mat-raised-button
+            color="primary"
+            class="px-3 py-1">
+            <label class="mat-button">Out</label>
+        </a>
+
+        <a *ngIf="type == TimeClockEntryType.In"
+            mat-stroked-button
+            color="primary"
+            class="px-3 py-1"
+            (click)="setType(TimeClockEntryType.Out)">
+            <label class="mat-button">Out</label>
+        </a>
+    </div>
+
+</div>
+
+<hr class="mb-2">
+
+<div class="row justify-content-end align-items-center">
+    <div class="col-auto">
+        <a mat-raised-button
+            color="accent"
+            class="px-3 py-1"
+            (click)="createEntry()"
+            [disabled]="form.invalid || form.pristine">
+            <label class="mat-button">Create</label>
+        </a>
+    </div>
+
+</div>

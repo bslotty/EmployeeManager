@@ -1,0 +1,11 @@
+<app-section-header [title]="title"
+    [buttons]="header_actions"
+    (event)="header_event($event)"></app-section-header>
+<div class="row justify-content-center align-items-center p-4">
+    <div class="col-auto">
+        <label class="mat-body-2">{{ message }}</label>
+    </div>
+</div>
+
+<!-- <app-form-actions [actions]="dialog_actions"
+    (event)="dialog_event($event)"></app-form-actions> -->

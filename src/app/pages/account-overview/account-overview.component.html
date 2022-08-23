@@ -1,0 +1,188 @@
+<div class="row justify-content-center align-items-center g-3">
+    <div class="col">
+        <label class="mat-headline">{{ title }}</label>
+    </div>
+
+    <div class="col-auto"
+        *ngIf="headerButtons.length > 0">
+        <app-button-bar [buttons]="headerButtons"
+            (event)="emit($event)">
+        </app-button-bar>
+    </div>
+
+</div>
+
+<hr class="mb-2">
+
+
+
+<div class="row justify-content-cener align-items-sar g-3">
+    <div class="col-12 col-md-6">
+        <div class="d-flex mt-3">
+            <label class="mat-body-2">Details</label>
+        </div>
+        <hr class="mb-2">
+
+        <form [formGroup]="form">
+            <div class=""
+                *ngFor="let control of controls">
+                <app-form-field [field]="control"></app-form-field>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="col-12 col-md-6"
+        *ngIf="employee.subordinates.length > 0">
+        <div class="d-flex mt-3">
+            <label class="mat-body-2">Subordinates</label>
+        </div>
+        <hr class="mb-2">
+
+        <div *ngFor="let sub of employee.subordinates">
+            <div class="row justify-content-center align-items-center py-3">
+                <div class="col d-flex flex-column">
+                    <label class="mat-body-1">{{sub.first}} {{sub.last}}</label>
+                    <label class="mat-caption">{{ sub.email }}</label>
+                    <label class="mat-caption">{{ sub.phone }}</label>
+                </div>
+
+                <div class="col-auto row justify-content-end align-items-center">
+
+                    <div class="col-auto px-1">
+                        <a mat-mini-fab
+                            color="transparent"
+                            routerLink="/rewards/{{sub.id}}"
+                            class="mat-elevation-z0">
+                            <app-icon name="shopping-bag"
+                                [color]="MatColor.primary"></app-icon>
+                        </a>
+                    </div>
+                    <div class="col-auto px-1">
+                        <a mat-mini-fab
+                            color="transparent"
+                            routerLink="/time-sheet/{{sub.id}}"
+                            class="mat-elevation-z0">
+                            <app-icon name="clock"
+                                [color]="MatColor.primary"></app-icon>
+                        </a>
+                    </div>
+                    <div class="col-auto px-1">
+                        <a mat-mini-fab
+                            color="transparent"
+                            routerLink="/account-overview/{{sub.id}}"
+                            class="mat-elevation-z0">
+                            <app-icon name="chevron-right"
+                                [color]="MatColor.primary"></app-icon>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-md-6"
+        *ngIf="employee.subordinates.length > 0">
+        <div class="d-flex mt-3">
+            <label class="mat-body-2">Subordinate Vacation Requests</label>
+        </div>
+        <hr class="mb-2">
+
+        <div *ngFor="let sub of employee.subordinates">
+            <div *ngFor="let request of sub.time_off">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col d-flex flex-column">
+                        <label class="mat-body-1">{{sub.first}} {{sub.last}}</label>
+                        <ng-container *ngIf="request.dates.length == 1">
+                            <label class="mat-caption">{{ request.dates[0] | date:"M/d" }} : {{ request.hours[0] }} hrs
+                            </label>
+                        </ng-container>
+                        <ng-container *ngIf="request.dates.length > 1">
+                            <label class="mat-caption">{{ request.dates[0] | date:"M/d" }} - {{
+                                request.dates[request.dates.length -1] | date:"M/d" }} : {{ request.total_hours }} hrs
+                            </label>
+                        </ng-container>
+
+                    </div>
+
+
+                    <div class="col-auto">
+                        <label class="mat-body-1"
+                            *ngIf="request.status == 0">{{ TimeOffStatus[request.status] }}</label>
+                        <label class="mat-body-1 color-accent"
+                            *ngIf="request.status == 2">{{ TimeOffStatus[request.status] }}</label>
+                        <label class="mat-body-1 color-warn"
+                            *ngIf="request.status == 1 || request.status == 3">{{ TimeOffStatus[request.status]
+                            }}</label>
+                    </div>
+
+                    <div class="col-auto">
+                        <a mat-mini-fab
+                            color="transparent"
+                            class="mat-elevation-z0"
+                            (click)="viewVacation(request, sub)">
+                            <app-icon name="chevron-right"
+                                [color]="MatColor.primary"></app-icon>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="col-12 col-md-6"
+        *ngIf="employee.time_off.length > 0">
+        <div class="d-flex mt-3">
+            <label class="mat-body-2">Your Vacation Requests</label>
+        </div>
+        <hr class="mb-2">
+
+        <div *ngFor="let request of employee.time_off">
+            <div class="row justify-content-center align-items-center">
+                <div class="col d-flex flex-column">
+                    <ng-container *ngIf="request.dates.length == 1">
+                        <label class="mat-body-1">{{ request.dates[0] | date:"M/d" }} : {{ request.hours[0] }} hrs
+                        </label>
+                    </ng-container>
+                    <ng-container *ngIf="request.dates.length > 1">
+                        <label class="mat-body-1">{{ request.dates[0] | date:"M/d" }} - {{
+                            request.dates[request.dates.length -1] | date:"M/d" }} : {{ request.total_hours }} hrs
+                        </label>
+                    </ng-container>
+
+                </div>
+
+
+                <div class="col-auto">
+                    <label class="mat-body-1"
+                        *ngIf="request.status == 0">{{ TimeOffStatus[request.status] }}</label>
+                    <label class="mat-body-1 color-accent"
+                        *ngIf="request.status == 2">{{ TimeOffStatus[request.status] }}</label>
+                    <label class="mat-body-1 color-warn"
+                        *ngIf="request.status == 1 || request.status == 3">{{ TimeOffStatus[request.status]
+                        }}</label>
+                </div>
+
+                <div class="col-auto">
+                    <a mat-mini-fab
+                        color="transparent"
+                        class="mat-elevation-z0"
+                        (click)="viewVacation(request, employee)">
+                        <app-icon name="chevron-right"
+                            [color]="MatColor.primary"></app-icon>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

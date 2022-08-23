@@ -1,0 +1,43 @@
+<div class="d-flex align-items-center">
+    <div class="col">
+        <label class="mat-subheading-1">Select Range</label>
+    </div>
+
+    <div class="col-auto">
+        <a mat-mini-fab
+            color="transparent"
+            class="mat-elevation-z0"
+            (click)="close()">
+            <app-icon name="x"
+                color=""></app-icon>
+        </a>
+    </div>
+</div>
+
+<hr>
+
+<div class="row justify-content-center align-items-center">
+    <div class="col">
+        <form [formGroup]="form">
+            <app-form-field [field]="controls[0]"></app-form-field>
+
+        </form>
+    </div>
+
+</div>
+
+
+<hr class="mb-3">
+
+
+<div class="row justify-content-end align-items-center">
+    <div class="col-auto">
+        <a mat-raised-button
+            color="accent"
+            (click)="save()"
+            [disabled]="form.invalid || form.pristine">
+            <label class="mat-button">Select</label>
+        </a>
+    </div>
+
+</div>

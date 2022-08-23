@@ -1,0 +1,80 @@
+<div class="d-flex align-items-center">
+    <div class="col">
+        <label class="mat-subheading-1">Vacation Details</label>
+    </div>
+
+    <div class="col-auto">
+        <a mat-mini-fab
+            color="transparent"
+            class="mat-elevation-z0"
+            (click)="close()">
+            <app-icon name="x"
+                color=""></app-icon>
+        </a>
+    </div>
+</div>
+
+<hr>
+
+<div *ngFor="let date of request.dates; index as i">
+    <div class="row justify-content-center align-items-center g-3">
+        <div class="col-auto">
+            <label class="mat-body-2">{{ date | date:"M/dd" }}</label>
+            
+        </div>
+        <div class="col-auto">
+            <label class="mat-body-2">{{ request.hours[i] }} hrs</label>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div *ngIf="actionable || cancelable">
+    <hr class="mb-2" >
+
+
+    <div class="row justify-content-end align-items-center">
+        <div class="col" *ngIf="actionable">
+            <a mat-raised-button 
+                color="accent"
+                (click)="approve()"
+                class="px-3 py-1">
+                <label class="mat-button">Approve</label>
+            </a>
+        </div>
+
+        <div class="col" *ngIf="actionable">
+            <a mat-raised-button 
+                color="warn"
+                (click)="deny()"
+                class="px-3 py-1">
+                <label class="mat-button">Deny</label>
+            </a>
+        </div>
+
+        <div class="col" *ngIf="cancelable">
+            <a mat-raised-button 
+                color="primary"
+                (click)="approve()"
+                class="px-3 py-1">
+                <label class="mat-button">Cancel</label>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div *ngIf="request.status != 0">
+    <hr class="mb-2" >
+
+    <div class="row justify-content-center align-items-center">
+        <div class="col-auto">
+            <label class="mat-title text-center color-accent" *ngIf="request.status == 2">{{ TimeOffStatus[request.status] }}</label>
+            <label class="mat-title text-center color-warn" *ngIf="request.status == 1 || request.status == 3">{{ TimeOffStatus[request.status] }}</label>
+        </div>
+        
+    </div>
+
+</div>

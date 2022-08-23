@@ -1,0 +1,111 @@
+<div class="d-flex align-items-center">
+    <div class="col">
+        <label class="mat-subheading-1">{{ data.title }}</label>
+    </div>
+
+    <div class="col-auto">
+        <a mat-mini-fab
+            color="transparent"
+            class="mat-elevation-z0"
+            (click)="close()">
+            <app-icon name="x"
+                color=""></app-icon>
+        </a>
+    </div>
+</div>
+
+<hr>
+
+
+<div class="d-flex flex-column align-items-start mt-3">
+    <div>
+        <label class="mat-caption">Search</label>
+    </div>
+    <div class="col-12">
+        <form [formGroup]="form">
+            <app-form-field [field]="formField"></app-form-field>
+        </form>
+    </div>
+</div>
+
+<div class="row justify-content-center align-items-center g-3">
+    <div class="col-2"
+        *ngFor="let secIcon of deptIcons">
+        <a mat-icon-button
+            color=""
+            (click)="filterBySection( secIcon )">
+            <app-icon [name]="secIcon"
+                color="dark"
+                size="22"></app-icon>
+        </a>
+    </div>
+</div>
+
+
+<div class="mt-3">
+    <label class="mat-caption">Results</label>
+</div>
+<div *ngFor="let account of visibleAccounts"
+    class="d-flex align-items-center mb-2">
+
+    <div class="col-auto">
+        <a mat-mini-fab
+            color="transparent"
+            class="mat-elevation-z0">
+            <app-icon [name]="DepartmentIcon[ Department[account.department] ]"
+                color="{{ account.manager == 0 ? MatColor.accent : MatColor.primary }}"></app-icon>
+        </a>
+    </div>
+
+
+    <div class="col d-flex flex-column">
+        <label class="mat-body-1">{{account.first}} {{account.last}}</label>
+        <label class="mat-caption">{{ account.email }}</label>
+        <label class="mat-caption">{{ account.phone }}</label>
+    </div>
+
+    <div class="col-auto">
+        <a mat-mini-fab
+            color=""
+            (click)="selectUser(account)"
+            class="mat-elevation-z0">
+            <app-icon name="chevron-right"
+                color=""></app-icon>
+        </a>
+    </div>
+
+</div>
+
+<div *ngIf="excluded != undefined"
+    class="row justify-content-center align-items-center">
+
+    <div class="col-auto">
+        <a mat-mini-fab
+            color="transparent"
+            (click)="prevResults()"
+            [disabled]="filtered_page == 1"
+            class="mat-elevation-z0">
+            <app-icon name="chevron-left" [color]="MatColor.primary"></app-icon>
+        </a>
+    </div>
+    <div class="col">
+        <label class="mat-caption text-center">Page: {{ filtered_page }} / {{ filtered_page_limit }}</label>
+    </div>
+    <div class="col-auto">
+        <a mat-mini-fab
+            color="transparent"
+            (click)="nextResults()"
+            [disabled]="filtered_page == filtered_page_limit"
+            class="mat-elevation-z0">
+            <app-icon name="chevron-right" [color]="MatColor.primary"></app-icon>
+        </a>
+    </div>
+</div>
+
+
+<div *ngIf="visibleAccounts?.length == 0"
+    class="alert alert-danger mb-0">
+    <div class="alert-text">
+        <label class="mat-caption">Nothing found</label>
+    </div>
+</div>

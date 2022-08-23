@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-end align-items-center">
+    <div *ngFor="let button of buttons"
+        class="col-auto ms-3">
+        <a mat-mini-fab
+            [class]="button.buttonColor == MatColor.transparent ? 'mat-elevation-z0' : 'mat-elevation-z2'"
+            [color]="MatColor[button.buttonColor]"
+            (click)="emit(button.name)">
+            <app-icon [name]="button.iconName"
+                [color]="button.iconColor">
+            </app-icon>
+        </a>
+    </div>
+</div>

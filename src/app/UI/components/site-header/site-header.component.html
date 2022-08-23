@@ -1,0 +1,28 @@
+<nav class="  mat-elevation-z5 mb-3">
+    <div class="container">
+        <div class="row justify-content-start align-items-center p-3">
+            <div class="col">
+                <label class="mat-display-1">Mushroooom!</label>
+            </div>
+            <div class="col-auto">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-auto ms-2"
+                        *ngFor="let route of routes">
+                        <ng-container *ngFor="let button of button_list">
+                            <a *ngIf="route == button.name"
+                                mat-fab
+                                [routerLink]="route"
+                                [color]="button.buttonColor">
+                                <app-icon [name]="button.iconName"
+                                    [color]="button.iconColor">
+                                </app-icon>
+                            </a>
+                        </ng-container>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>

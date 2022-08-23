@@ -1,0 +1,71 @@
+<div class="row justify-content-center align-items-center g-0 mt-3">
+    <div class="col-auto">
+        <label class="mat-body-2">{{ entry.date | date:"EEE M/d" }}</label>
+
+
+    </div>
+    <hr>
+
+    <div *ngIf="entry.entries.length > 0; else empty">
+        <div *ngFor="let ent of entry.entries; index as i"
+            class="row justify-content-center align-items-center g-0">
+            <div class="col p-0">
+                <label class="mat-body-1">{{ ent.date | date:"HH:mm" }}</label>
+            </div>
+
+            <div class="col-auto p-0 me-1"
+                *ngIf="entry.durations[i - 1]?.hours > 0">
+                <label class="mat-body-1">{{ entry.durations[i - 1].hours }}</label>
+                <label class="mat-caption">h</label>
+            </div>
+            <div class="col-auto p-0"
+                *ngIf="entry.durations[i - 1]?.minutes > 0">
+                <label class="mat-body-1">{{ entry.durations[i - 1].minutes }}</label>
+                <label class="mat-caption">m</label>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <div class="row justify-content-center align-items-center p-0" *ngIf="entry.entries.length > 0">
+        <div class="col p-0">
+            <!-- <label class="mat-body-1">Total: </label> -->
+        </div>
+
+        <div class="col-auto p-0 me-1"
+            *ngIf="entry.total_hours > 0">
+            <label class="mat-body-1">{{ entry.total_hours }}</label>
+            <label class="mat-caption">h</label>
+        </div>
+        <div class="col-auto p-0"
+            *ngIf="entry.total_minutes > 0">
+            <label class="mat-body-1">{{ entry.total_minutes }}</label>
+            <label class="mat-caption">m</label>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center align-items-center p-0 alert alert-warn" *ngIf="vacation_hours != undefined">
+        <div class="col p-0">
+            <label class="mat-body-1">Time Off: </label>
+        </div>
+
+        <div class="col-auto p-0 me-1 ">
+            <label class="mat-body-1">{{ vacation_hours }}</label>
+            <label class="mat-caption">h</label>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<ng-template #empty>
+    <div class="alert alert-primary mb-0">
+        <label class="alert-text mat-body-2">No Entries</label>
+    </div>
+</ng-template>

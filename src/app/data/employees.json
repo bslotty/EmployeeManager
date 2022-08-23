@@ -1,0 +1,1064 @@
+[
+    {
+        "id"          : 1,
+        "first_name"  : "Chantal",
+        "last_name"   : "Greenlies",
+        "phone_number": "947-245-3485",
+        "email"       : "cgreenlies0@live.com",
+        "department"  : 1,
+        "manager"     : 0
+    },
+    {
+        "id"          : 2,
+        "first_name"  : "Hedy",
+        "last_name"   : "Gynn",
+        "phone_number": "313-265-7072",
+        "email"       : "hgynn1@theatlantic.com",
+        "department"  : 2,
+        "manager"     : 0
+    },
+    {
+        "id"          : 3,
+        "first_name"  : "Jada",
+        "last_name"   : "Kleis",
+        "phone_number": "497-448-4290",
+        "email"       : "jkleis2@webmd.com",
+        "department"  : 3,
+        "manager"     : 0
+    },
+    {
+        "id"          : 4,
+        "first_name"  : "Kath",
+        "last_name"   : "Kyttor",
+        "phone_number": "724-413-0320",
+        "email"       : "kkyttor3@yelp.com",
+        "department"  : 4,
+        "manager"     : 0
+    },
+    {
+        "id"          : 5,
+        "first_name"  : "Ryley",
+        "last_name"   : "Hayward",
+        "phone_number": "837-438-9476",
+        "email"       : "rhayward4@oaic.gov.au",
+        "department"  : 5,
+        "manager"     : 0
+    },
+    {
+        "id"          : 6,
+        "first_name"  : "Julita",
+        "last_name"   : "Southcomb",
+        "phone_number": "939-815-5148",
+        "email"       : "jsouthcomb5@opera.com",
+        "department"  : 6,
+        "manager"     : 0
+    },
+    {
+        "id"          : 7,
+        "first_name"  : "Bennie",
+        "last_name"   : "Petherick",
+        "phone_number": "147-741-0266",
+        "email"       : "bpetherick6@sun.com",
+        "department"  : 7,
+        "manager"     : 0
+    },
+    {
+        "id"          : 8,
+        "first_name"  : "Claudette",
+        "last_name"   : "Baude",
+        "phone_number": "615-735-5898",
+        "email"       : "cbaude7@biblegateway.com",
+        "department"  : 8,
+        "manager"     : 0
+    },
+    {
+        "id"          : 9,
+        "first_name"  : "Corby",
+        "last_name"   : "Fashion",
+        "phone_number": "707-469-1902",
+        "email"       : "cfashion8@ameblo.jp",
+        "department"  : 0,
+        "manager"     : 0
+    },
+    {
+        "id"          : 10,
+        "first_name"  : "Irvine",
+        "last_name"   : "Littrik",
+        "phone_number": "109-361-5200",
+        "email"       : "ilittrik9@bandcamp.com",
+        "department"  : 1,
+        "manager"     : 0
+    },
+    {
+        "id"          : 11,
+        "first_name"  : "Irvine",
+        "last_name"   : "Franz-Schoninger",
+        "phone_number": "765-577-5441",
+        "email"       : "ifranzschoningera@trellian.com",
+        "department"  : 2,
+        "manager"     : 0
+    },
+    {
+        "id"          : 12,
+        "first_name"  : "Currie",
+        "last_name"   : "Panniers",
+        "phone_number": "203-340-8821",
+        "email"       : "cpanniersb@storify.com",
+        "department"  : 3,
+        "manager"     : 0
+    },
+    {
+        "id"          : 13,
+        "first_name"  : "Kyle",
+        "last_name"   : "Jeal",
+        "phone_number": "612-780-4730",
+        "email"       : "kjealc@admin.ch",
+        "department"  : 4,
+        "manager"     : 0
+    },
+    {
+        "id"          : 14,
+        "first_name"  : "Gustavo",
+        "last_name"   : "Jersh",
+        "phone_number": "774-536-4716",
+        "email"       : "gjershd@google.nl",
+        "department"  : 5,
+        "manager"     : 0
+    },
+    {
+        "id"          : 15,
+        "first_name"  : "Yorgo",
+        "last_name"   : "Petigrew",
+        "phone_number": "557-860-1168",
+        "email"       : "ypetigrewe@mashable.com",
+        "department"  : 6,
+        "manager"     : 0
+    },
+    {
+        "id"          : 16,
+        "first_name"  : "Talya",
+        "last_name"   : "Hengoed",
+        "phone_number": "292-401-8342",
+        "email"       : "thengoedf@smh.com.au",
+        "department"  : 7,
+        "manager"     : 0
+    },
+    {
+        "id"          : 17,
+        "first_name"  : "Charmion",
+        "last_name"   : "Chalcot",
+        "phone_number": "383-908-0021",
+        "email"       : "cchalcotg@sakura.ne.jp",
+        "department"  : 8,
+        "manager"     : 0
+    },
+    {
+        "id"          : 18,
+        "first_name"  : "Lurleen",
+        "last_name"   : "Dymond",
+        "phone_number": "399-214-9781",
+        "email"       : "ldymondh@cbc.ca",
+        "department"  : 0,
+        "manager"     : 0
+    },
+    {
+        "id"          : 19,
+        "first_name"  : "Giselbert",
+        "last_name"   : "Lugton",
+        "phone_number": "963-436-7556",
+        "email"       : "glugton0@theatlantic.com",
+        "department"  : 6,
+        "manager"     : 5
+    },
+    {
+        "id"          : 20,
+        "first_name"  : "Malia",
+        "last_name"   : "Londer",
+        "phone_number": "184-818-1454",
+        "email"       : "mlonder1@cbslocal.com",
+        "department"  : 7,
+        "manager"     : 2
+    },
+    {
+        "id"          : 21,
+        "first_name"  : "Shaylah",
+        "last_name"   : "Elphinston",
+        "phone_number": "319-239-2925",
+        "email"       : "selphinston2@japanpost.jp",
+        "department"  : 1,
+        "manager"     : 5
+    },
+    {
+        "id"          : 22,
+        "first_name"  : "Willyt",
+        "last_name"   : "Bustin",
+        "phone_number": "771-636-8568",
+        "email"       : "wbustin3@techcrunch.com",
+        "department"  : 8,
+        "manager"     : 11
+    },
+    {
+        "id"          : 23,
+        "first_name"  : "Matthew",
+        "last_name"   : "Flight",
+        "phone_number": "208-964-1414",
+        "email"       : "mflight4@mapquest.com",
+        "department"  : 1,
+        "manager"     : 17
+    },
+    {
+        "id"          : 24,
+        "first_name"  : "Norina",
+        "last_name"   : "Simonazzi",
+        "phone_number": "641-186-6384",
+        "email"       : "nsimonazzi5@yahoo.co.jp",
+        "department"  : 6,
+        "manager"     : 12
+    },
+    {
+        "id"          : 25,
+        "first_name"  : "Meredithe",
+        "last_name"   : "Hattigan",
+        "phone_number": "525-626-7233",
+        "email"       : "mhattigan6@joomla.org",
+        "department"  : 1,
+        "manager"     : 16
+    },
+    {
+        "id"          : 26,
+        "first_name"  : "Catharine",
+        "last_name"   : "Rosewarne",
+        "phone_number": "392-210-8063",
+        "email"       : "crosewarne7@ox.ac.uk",
+        "department"  : 6,
+        "manager"     : 13
+    },
+    {
+        "id"          : 27,
+        "first_name"  : "Adelheid",
+        "last_name"   : "Esome",
+        "phone_number": "686-953-2692",
+        "email"       : "aesome8@cnet.com",
+        "department"  : 4,
+        "manager"     : 16
+    },
+    {
+        "id"          : 28,
+        "first_name"  : "Tiphanie",
+        "last_name"   : "Vanne",
+        "phone_number": "750-465-7358",
+        "email"       : "tvanne9@weibo.com",
+        "department"  : 8,
+        "manager"     : 13
+    },
+    {
+        "id"          : 29,
+        "first_name"  : "Gun",
+        "last_name"   : "Frodsham",
+        "phone_number": "334-762-6439",
+        "email"       : "gfrodshama@booking.com",
+        "department"  : 0,
+        "manager"     : 3
+    },
+    {
+        "id"          : 30,
+        "first_name"  : "Hedvig",
+        "last_name"   : "Brobak",
+        "phone_number": "265-594-5356",
+        "email"       : "hbrobakb@chicagotribune.com",
+        "department"  : 0,
+        "manager"     : 1
+    },
+    {
+        "id"          : 31,
+        "first_name"  : "Nari",
+        "last_name"   : "Bloore",
+        "phone_number": "369-560-9690",
+        "email"       : "nbloorec@github.com",
+        "department"  : 0,
+        "manager"     : 13
+    },
+    {
+        "id"          : 32,
+        "first_name"  : "Demetri",
+        "last_name"   : "Wakes",
+        "phone_number": "441-621-6618",
+        "email"       : "dwakesd@washington.edu",
+        "department"  : 7,
+        "manager"     : 18
+    },
+    {
+        "id"          : 33,
+        "first_name"  : "Gennie",
+        "last_name"   : "Udell",
+        "phone_number": "628-639-1404",
+        "email"       : "gudelle@sogou.com",
+        "department"  : 1,
+        "manager"     : 12
+    },
+    {
+        "id"          : 34,
+        "first_name"  : "Hannah",
+        "last_name"   : "Pilling",
+        "phone_number": "197-955-9430",
+        "email"       : "hpillingf@vinaora.com",
+        "department"  : 7,
+        "manager"     : 11
+    },
+    {
+        "id"          : 35,
+        "first_name"  : "Les",
+        "last_name"   : "Matiasek",
+        "phone_number": "915-321-6339",
+        "email"       : "lmatiasekg@constantcontact.com",
+        "department"  : 4,
+        "manager"     : 8
+    },
+    {
+        "id"          : 36,
+        "first_name"  : "Harriett",
+        "last_name"   : "Empson",
+        "phone_number": "263-484-1294",
+        "email"       : "hempsonh@comcast.net",
+        "department"  : 2,
+        "manager"     : 7
+    },
+    {
+        "id"          : 37,
+        "first_name"  : "Dante",
+        "last_name"   : "Baraja",
+        "phone_number": "550-795-2518",
+        "email"       : "dbarajai@canalblog.com",
+        "department"  : 8,
+        "manager"     : 8
+    },
+    {
+        "id"          : 38,
+        "first_name"  : "Delmor",
+        "last_name"   : "Villa",
+        "phone_number": "407-903-1888",
+        "email"       : "dvillaj@theglobeandmail.com",
+        "department"  : 4,
+        "manager"     : 6
+    },
+    {
+        "id"          : 39,
+        "first_name"  : "Ky",
+        "last_name"   : "Barrabeale",
+        "phone_number": "679-155-0980",
+        "email"       : "kbarrabealek@mashable.com",
+        "department"  : 3,
+        "manager"     : 13
+    },
+    {
+        "id"          : 40,
+        "first_name"  : "Connie",
+        "last_name"   : "Strangwood",
+        "phone_number": "471-431-7659",
+        "email"       : "cstrangwoodl@berkeley.edu",
+        "department"  : 6,
+        "manager"     : 10
+    },
+    {
+        "id"          : 41,
+        "first_name"  : "Jasun",
+        "last_name"   : "Novacek",
+        "phone_number": "872-775-2347",
+        "email"       : "jnovacekm@mayoclinic.com",
+        "department"  : 1,
+        "manager"     : 17
+    },
+    {
+        "id"          : 42,
+        "first_name"  : "Ansell",
+        "last_name"   : "Crocetti",
+        "phone_number": "146-880-9664",
+        "email"       : "acrocettin@jimdo.com",
+        "department"  : 2,
+        "manager"     : 3
+    },
+    {
+        "id"          : 43,
+        "first_name"  : "Darill",
+        "last_name"   : "Carloni",
+        "phone_number": "812-695-2194",
+        "email"       : "dcarlonio@webnode.com",
+        "department"  : 6,
+        "manager"     : 7
+    },
+    {
+        "id"          : 44,
+        "first_name"  : "Jaine",
+        "last_name"   : "Silverson",
+        "phone_number": "154-298-7663",
+        "email"       : "jsilversonp@uol.com.br",
+        "department"  : 3,
+        "manager"     : 16
+    },
+    {
+        "id"          : 45,
+        "first_name"  : "Ibby",
+        "last_name"   : "Dullard",
+        "phone_number": "160-711-4433",
+        "email"       : "idullardq@miitbeian.gov.cn",
+        "department"  : 1,
+        "manager"     : 17
+    },
+    {
+        "id"          : 46,
+        "first_name"  : "April",
+        "last_name"   : "Lawlee",
+        "phone_number": "175-255-2294",
+        "email"       : "alawleer@cocolog-nifty.com",
+        "department"  : 8,
+        "manager"     : 11
+    },
+    {
+        "id"          : 47,
+        "first_name"  : "Daron",
+        "last_name"   : "Venners",
+        "phone_number": "984-477-6907",
+        "email"       : "dvennerss@list-manage.com",
+        "department"  : 2,
+        "manager"     : 8
+    },
+    {
+        "id"          : 48,
+        "first_name"  : "Wheeler",
+        "last_name"   : "Artharg",
+        "phone_number": "253-313-7133",
+        "email"       : "warthargt@paypal.com",
+        "department"  : 1,
+        "manager"     : 16
+    },
+    {
+        "id"          : 49,
+        "first_name"  : "Nichol",
+        "last_name"   : "Rontree",
+        "phone_number": "839-478-1741",
+        "email"       : "nrontreeu@indiegogo.com",
+        "department"  : 2,
+        "manager"     : 17
+    },
+    {
+        "id"          : 50,
+        "first_name"  : "Nevin",
+        "last_name"   : "Burden",
+        "phone_number": "878-585-0907",
+        "email"       : "nburdenv@prnewswire.com",
+        "department"  : 1,
+        "manager"     : 11
+    },
+    {
+        "id"          : 51,
+        "first_name"  : "Thaine",
+        "last_name"   : "Toolan",
+        "phone_number": "948-147-3505",
+        "email"       : "ttoolanw@liveinternet.ru",
+        "department"  : 7,
+        "manager"     : 2
+    },
+    {
+        "id"          : 52,
+        "first_name"  : "Lew",
+        "last_name"   : "Harlowe",
+        "phone_number": "811-505-7975",
+        "email"       : "lharlowex@businesswire.com",
+        "department"  : 8,
+        "manager"     : 4
+    },
+    {
+        "id"          : 53,
+        "first_name"  : "Richie",
+        "last_name"   : "Wadworth",
+        "phone_number": "366-256-3660",
+        "email"       : "rwadworthy@springer.com",
+        "department"  : 3,
+        "manager"     : 15
+    },
+    {
+        "id"          : 54,
+        "first_name"  : "Alaster",
+        "last_name"   : "Skyrm",
+        "phone_number": "734-336-9089",
+        "email"       : "askyrmz@about.me",
+        "department"  : 3,
+        "manager"     : 9
+    },
+    {
+        "id"          : 55,
+        "first_name"  : "Jefferey",
+        "last_name"   : "Bewsy",
+        "phone_number": "547-653-3588",
+        "email"       : "jbewsy10@netvibes.com",
+        "department"  : 3,
+        "manager"     : 11
+    },
+    {
+        "id"          : 56,
+        "first_name"  : "Emily",
+        "last_name"   : "Gorce",
+        "phone_number": "773-922-7955",
+        "email"       : "egorce11@lulu.com",
+        "department"  : 2,
+        "manager"     : 9
+    },
+    {
+        "id"          : 57,
+        "first_name"  : "Ralph",
+        "last_name"   : "Sizey",
+        "phone_number": "152-233-3277",
+        "email"       : "rsizey12@whitehouse.gov",
+        "department"  : 7,
+        "manager"     : 3
+    },
+    {
+        "id"          : 58,
+        "first_name"  : "Dionisio",
+        "last_name"   : "Gates",
+        "phone_number": "263-725-5174",
+        "email"       : "dgates13@oakley.com",
+        "department"  : 1,
+        "manager"     : 10
+    },
+    {
+        "id"          : 59,
+        "first_name"  : "Mylo",
+        "last_name"   : "Cordes",
+        "phone_number": "677-523-3319",
+        "email"       : "mcordes14@forbes.com",
+        "department"  : 2,
+        "manager"     : 12
+    },
+    {
+        "id"          : 60,
+        "first_name"  : "Janaya",
+        "last_name"   : "Sandcraft",
+        "phone_number": "109-153-6467",
+        "email"       : "jsandcraft15@tmall.com",
+        "department"  : 2,
+        "manager"     : 5
+    },
+    {
+        "id"          : 61,
+        "first_name"  : "Erma",
+        "last_name"   : "Maidens",
+        "phone_number": "752-144-7692",
+        "email"       : "emaidens16@youtube.com",
+        "department"  : 6,
+        "manager"     : 6
+    },
+    {
+        "id"          : 62,
+        "first_name"  : "Rand",
+        "last_name"   : "Poncet",
+        "phone_number": "434-292-9617",
+        "email"       : "rponcet17@ed.gov",
+        "department"  : 8,
+        "manager"     : 16
+    },
+    {
+        "id"          : 63,
+        "first_name"  : "Harlen",
+        "last_name"   : "Magnay",
+        "phone_number": "732-191-8374",
+        "email"       : "hmagnay18@nationalgeographic.com",
+        "department"  : 6,
+        "manager"     : 7
+    },
+    {
+        "id"          : 64,
+        "first_name"  : "Thelma",
+        "last_name"   : "Leyton",
+        "phone_number": "310-960-6170",
+        "email"       : "tleyton19@thetimes.co.uk",
+        "department"  : 8,
+        "manager"     : 16
+    },
+    {
+        "id"          : 65,
+        "first_name"  : "Archy",
+        "last_name"   : "Claypool",
+        "phone_number": "958-621-1567",
+        "email"       : "aclaypool1a@wisc.edu",
+        "department"  : 3,
+        "manager"     : 9
+    },
+    {
+        "id"          : 66,
+        "first_name"  : "Oren",
+        "last_name"   : "Lyall",
+        "phone_number": "240-547-0245",
+        "email"       : "olyall1b@bloomberg.com",
+        "department"  : 1,
+        "manager"     : 9
+    },
+    {
+        "id"          : 67,
+        "first_name"  : "Tori",
+        "last_name"   : "Wingeatt",
+        "phone_number": "736-496-6472",
+        "email"       : "twingeatt1c@springer.com",
+        "department"  : 6,
+        "manager"     : 8
+    },
+    {
+        "id"          : 68,
+        "first_name"  : "Amalee",
+        "last_name"   : "Roache",
+        "phone_number": "987-556-4161",
+        "email"       : "aroache1d@businesswire.com",
+        "department"  : 4,
+        "manager"     : 10
+    },
+    {
+        "id"          : 69,
+        "first_name"  : "Wolfie",
+        "last_name"   : "Feifer",
+        "phone_number": "484-685-9474",
+        "email"       : "wfeifer1e@state.gov",
+        "department"  : 5,
+        "manager"     : 15
+    },
+    {
+        "id"          : 70,
+        "first_name"  : "Sigmund",
+        "last_name"   : "Rablen",
+        "phone_number": "251-905-8715",
+        "email"       : "srablen1f@reference.com",
+        "department"  : 5,
+        "manager"     : 10
+    },
+    {
+        "id"          : 71,
+        "first_name"  : "Drake",
+        "last_name"   : "Micheli",
+        "phone_number": "826-726-5201",
+        "email"       : "dmicheli1g@imdb.com",
+        "department"  : 3,
+        "manager"     : 14
+    },
+    {
+        "id"          : 72,
+        "first_name"  : "Avivah",
+        "last_name"   : "Winchcum",
+        "phone_number": "605-834-6127",
+        "email"       : "awinchcum1h@cnn.com",
+        "department"  : 7,
+        "manager"     : 7
+    },
+    {
+        "id"          : 73,
+        "first_name"  : "Monty",
+        "last_name"   : "Tolerton",
+        "phone_number": "140-450-3572",
+        "email"       : "mtolerton1i@example.com",
+        "department"  : 2,
+        "manager"     : 17
+    },
+    {
+        "id"          : 74,
+        "first_name"  : "Bonnibelle",
+        "last_name"   : "McLaughlan",
+        "phone_number": "804-966-8866",
+        "email"       : "bmclaughlan1j@illinois.edu",
+        "department"  : 7,
+        "manager"     : 16
+    },
+    {
+        "id"          : 75,
+        "first_name"  : "Horton",
+        "last_name"   : "Giorgetti",
+        "phone_number": "758-842-5099",
+        "email"       : "hgiorgetti1k@mashable.com",
+        "department"  : 4,
+        "manager"     : 6
+    },
+    {
+        "id"          : 76,
+        "first_name"  : "Mellicent",
+        "last_name"   : "Schrei",
+        "phone_number": "836-435-8446",
+        "email"       : "mschrei1l@home.pl",
+        "department"  : 5,
+        "manager"     : 1
+    },
+    {
+        "id"          : 77,
+        "first_name"  : "Dionne",
+        "last_name"   : "Entres",
+        "phone_number": "606-821-5388",
+        "email"       : "dentres1m@weebly.com",
+        "department"  : 3,
+        "manager"     : 13
+    },
+    {
+        "id"          : 78,
+        "first_name"  : "Rhiamon",
+        "last_name"   : "Mc Coughan",
+        "phone_number": "347-137-4198",
+        "email"       : "rmccoughan1n@technorati.com",
+        "department"  : 0,
+        "manager"     : 11
+    },
+    {
+        "id"          : 79,
+        "first_name"  : "Effie",
+        "last_name"   : "Itzak",
+        "phone_number": "944-219-5894",
+        "email"       : "eitzak1o@bloomberg.com",
+        "department"  : 6,
+        "manager"     : 17
+    },
+    {
+        "id"          : 80,
+        "first_name"  : "Renata",
+        "last_name"   : "Stanyland",
+        "phone_number": "916-599-1851",
+        "email"       : "rstanyland1p@wikimedia.org",
+        "department"  : 7,
+        "manager"     : 15
+    },
+    {
+        "id"          : 81,
+        "first_name"  : "Cathrine",
+        "last_name"   : "Harbour",
+        "phone_number": "491-619-8947",
+        "email"       : "charbour1q@china.com.cn",
+        "department"  : 7,
+        "manager"     : 17
+    },
+    {
+        "id"          : 82,
+        "first_name"  : "Maurizio",
+        "last_name"   : "Croci",
+        "phone_number": "295-308-4981",
+        "email"       : "mcroci1r@dailymail.co.uk",
+        "department"  : 0,
+        "manager"     : 6
+    },
+    {
+        "id"          : 83,
+        "first_name"  : "Amandi",
+        "last_name"   : "Veltman",
+        "phone_number": "647-898-3645",
+        "email"       : "aveltman1s@tripod.com",
+        "department"  : 2,
+        "manager"     : 4
+    },
+    {
+        "id"          : 84,
+        "first_name"  : "Jilly",
+        "last_name"   : "Dufty",
+        "phone_number": "135-312-7873",
+        "email"       : "jdufty1t@slate.com",
+        "department"  : 1,
+        "manager"     : 7
+    },
+    {
+        "id"          : 85,
+        "first_name"  : "Marnia",
+        "last_name"   : "Ashbee",
+        "phone_number": "366-399-6790",
+        "email"       : "mashbee1u@msu.edu",
+        "department"  : 7,
+        "manager"     : 18
+    },
+    {
+        "id"          : 86,
+        "first_name"  : "Niven",
+        "last_name"   : "Collymore",
+        "phone_number": "615-822-6624",
+        "email"       : "ncollymore1v@google.com.hk",
+        "department"  : 5,
+        "manager"     : 16
+    },
+    {
+        "id"          : 87,
+        "first_name"  : "Gisela",
+        "last_name"   : "Symmons",
+        "phone_number": "143-573-0832",
+        "email"       : "gsymmons1w@yellowbook.com",
+        "department"  : 1,
+        "manager"     : 11
+    },
+    {
+        "id"          : 88,
+        "first_name"  : "Steward",
+        "last_name"   : "Giacopello",
+        "phone_number": "294-291-8491",
+        "email"       : "sgiacopello1x@omniture.com",
+        "department"  : 7,
+        "manager"     : 12
+    },
+    {
+        "id"          : 89,
+        "first_name"  : "Yolanthe",
+        "last_name"   : "Betho",
+        "phone_number": "654-471-0157",
+        "email"       : "ybetho1y@google.ca",
+        "department"  : 3,
+        "manager"     : 13
+    },
+    {
+        "id"          : 90,
+        "first_name"  : "Benedikt",
+        "last_name"   : "D'Alwis",
+        "phone_number": "729-557-6644",
+        "email"       : "bdalwis1z@clickbank.net",
+        "department"  : 2,
+        "manager"     : 12
+    },
+    {
+        "id"          : 91,
+        "first_name"  : "Wayne",
+        "last_name"   : "Worster",
+        "phone_number": "456-159-2107",
+        "email"       : "wworster20@blogs.com",
+        "department"  : 0,
+        "manager"     : 17
+    },
+    {
+        "id"          : 92,
+        "first_name"  : "Winifred",
+        "last_name"   : "Truscott",
+        "phone_number": "303-789-1715",
+        "email"       : "wtruscott21@state.tx.us",
+        "department"  : 4,
+        "manager"     : 17
+    },
+    {
+        "id"          : 93,
+        "first_name"  : "Yankee",
+        "last_name"   : "Mathie",
+        "phone_number": "120-636-7122",
+        "email"       : "ymathie22@skyrock.com",
+        "department"  : 0,
+        "manager"     : 2
+    },
+    {
+        "id"          : 94,
+        "first_name"  : "Adelice",
+        "last_name"   : "Hannabuss",
+        "phone_number": "168-136-7101",
+        "email"       : "ahannabuss23@ted.com",
+        "department"  : 4,
+        "manager"     : 4
+    },
+    {
+        "id"          : 95,
+        "first_name"  : "Lane",
+        "last_name"   : "Wrought",
+        "phone_number": "928-777-9973",
+        "email"       : "lwrought24@amazon.co.jp",
+        "department"  : 8,
+        "manager"     : 17
+    },
+    {
+        "id"          : 96,
+        "first_name"  : "Rycca",
+        "last_name"   : "Jory",
+        "phone_number": "946-202-7608",
+        "email"       : "rjory25@google.es",
+        "department"  : 6,
+        "manager"     : 16
+    },
+    {
+        "id"          : 97,
+        "first_name"  : "Manolo",
+        "last_name"   : "Sarfass",
+        "phone_number": "568-724-0883",
+        "email"       : "msarfass26@pen.io",
+        "department"  : 3,
+        "manager"     : 10
+    },
+    {
+        "id"          : 98,
+        "first_name"  : "Meggie",
+        "last_name"   : "Kienzle",
+        "phone_number": "702-384-0279",
+        "email"       : "mkienzle27@gravatar.com",
+        "department"  : 8,
+        "manager"     : 4
+    },
+    {
+        "id"          : 99,
+        "first_name"  : "Riobard",
+        "last_name"   : "Brandolini",
+        "phone_number": "201-433-1466",
+        "email"       : "rbrandolini28@google.ru",
+        "department"  : 0,
+        "manager"     : 6
+    },
+    {
+        "id"          : 100,
+        "first_name"  : "Erskine",
+        "last_name"   : "Figgs",
+        "phone_number": "734-438-9484",
+        "email"       : "efiggs29@rakuten.co.jp",
+        "department"  : 6,
+        "manager"     : 13
+    },
+    {
+        "id"          : 101,
+        "first_name"  : "Obie",
+        "last_name"   : "Burnip",
+        "phone_number": "302-807-9259",
+        "email"       : "oburnip2a@vistaprint.com",
+        "department"  : 8,
+        "manager"     : 17
+    },
+    {
+        "id"          : 102,
+        "first_name"  : "Jandy",
+        "last_name"   : "Whorf",
+        "phone_number": "511-491-6645",
+        "email"       : "jwhorf2b@netlog.com",
+        "department"  : 1,
+        "manager"     : 2
+    },
+    {
+        "id"          : 103,
+        "first_name"  : "Alaine",
+        "last_name"   : "Tiler",
+        "phone_number": "322-697-5769",
+        "email"       : "atiler2c@europa.eu",
+        "department"  : 5,
+        "manager"     : 8
+    },
+    {
+        "id"          : 104,
+        "first_name"  : "Alejandra",
+        "last_name"   : "Wodham",
+        "phone_number": "808-976-8331",
+        "email"       : "awodham2d@nhs.uk",
+        "department"  : 4,
+        "manager"     : 10
+    },
+    {
+        "id"          : 105,
+        "first_name"  : "Tobin",
+        "last_name"   : "Itzcak",
+        "phone_number": "412-157-0687",
+        "email"       : "titzcak2e@apache.org",
+        "department"  : 0,
+        "manager"     : 10
+    },
+    {
+        "id"          : 106,
+        "first_name"  : "Keelby",
+        "last_name"   : "Sevin",
+        "phone_number": "950-561-7861",
+        "email"       : "ksevin2f@instagram.com",
+        "department"  : 5,
+        "manager"     : 11
+    },
+    {
+        "id"          : 107,
+        "first_name"  : "Kelcey",
+        "last_name"   : "Stockport",
+        "phone_number": "915-952-0470",
+        "email"       : "kstockport2g@house.gov",
+        "department"  : 6,
+        "manager"     : 13
+    },
+    {
+        "id"          : 108,
+        "first_name"  : "Hester",
+        "last_name"   : "Geraldi",
+        "phone_number": "939-368-1356",
+        "email"       : "hgeraldi2h@seattletimes.com",
+        "department"  : 8,
+        "manager"     : 2
+    },
+    {
+        "id"          : 109,
+        "first_name"  : "Kyla",
+        "last_name"   : "Dicky",
+        "phone_number": "584-808-4282",
+        "email"       : "kdicky2i@xinhuanet.com",
+        "department"  : 0,
+        "manager"     : 1
+    },
+    {
+        "id"          : 110,
+        "first_name"  : "Filippo",
+        "last_name"   : "Dilleway",
+        "phone_number": "875-335-4272",
+        "email"       : "fdilleway2j@bluehost.com",
+        "department"  : 1,
+        "manager"     : 14
+    },
+    {
+        "id"          : 111,
+        "first_name"  : "Claiborn",
+        "last_name"   : "Giriardelli",
+        "phone_number": "910-660-3744",
+        "email"       : "cgiriardelli2k@indiegogo.com",
+        "department"  : 4,
+        "manager"     : 13
+    },
+    {
+        "id"          : 112,
+        "first_name"  : "Zacherie",
+        "last_name"   : "Warlowe",
+        "phone_number": "321-244-0158",
+        "email"       : "zwarlowe2l@vkontakte.ru",
+        "department"  : 4,
+        "manager"     : 12
+    },
+    {
+        "id"          : 113,
+        "first_name"  : "Kikelia",
+        "last_name"   : "Kinch",
+        "phone_number": "840-558-7774",
+        "email"       : "kkinch2m@nps.gov",
+        "department"  : 3,
+        "manager"     : 2
+    },
+    {
+        "id"          : 114,
+        "first_name"  : "Shae",
+        "last_name"   : "Tatlow",
+        "phone_number": "302-920-8680",
+        "email"       : "statlow2n@buzzfeed.com",
+        "department"  : 0,
+        "manager"     : 9
+    },
+    {
+        "id"          : 115,
+        "first_name"  : "Lorrie",
+        "last_name"   : "Dolder",
+        "phone_number": "299-129-2227",
+        "email"       : "ldolder2o@blogger.com",
+        "department"  : 4,
+        "manager"     : 9
+    },
+    {
+        "id"          : 116,
+        "first_name"  : "Frederic",
+        "last_name"   : "Knutton",
+        "phone_number": "438-624-1905",
+        "email"       : "fknutton2p@bandcamp.com",
+        "department"  : 5,
+        "manager"     : 16
+    },
+    {
+        "id"          : 117,
+        "first_name"  : "Del",
+        "last_name"   : "Canedo",
+        "phone_number": "411-993-0099",
+        "email"       : "dcanedo2q@biblegateway.com",
+        "department"  : 1,
+        "manager"     : 11
+    },
+    {
+        "id"          : 118,
+        "first_name"  : "Mattias",
+        "last_name"   : "MacConnell",
+        "phone_number": "352-234-0413",
+        "email"       : "mmacconnell2r@sohu.com",
+        "department"  : 2,
+        "manager"     : 18
+    }
+]

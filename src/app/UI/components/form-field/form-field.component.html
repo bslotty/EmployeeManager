@@ -1,0 +1,110 @@
+<mat-form-field *ngIf="field"
+    appearance="fill">
+    <mat-label>
+        <label class="mat-body-2">{{ field.label }}</label>
+        <!-- <label *ngIf="field?.control?.hasError('required')">*</label> -->
+    </mat-label>
+
+
+
+    <ng-container *ngIf="field.type == types.text">
+        <input matInput
+            [formControl]="field.control" />
+    </ng-container>
+
+    <ng-container *ngIf="field.type == types.email">
+        <input matInput
+            [formControl]="field.control" />
+    </ng-container>
+
+    <ng-container *ngIf="field.type == types.phone">
+        <input matInput
+            [formControl]="field.control"
+            placeholder="XXX-XXX-XXXX" />
+    </ng-container>
+
+    <ng-container *ngIf="field.type == types.password">
+        <input matInput
+            [formControl]="field.control"
+            [type]="password_type" />
+        <span class="suffix-fix"
+            (click)="togglePasswordVisibility()">
+            <app-icon [name]="password_icon"
+                [color]="MatColor.primary"></app-icon>
+        </span>
+    </ng-container>
+
+
+    <ng-container *ngIf="field.type == types.date">
+        <input matInput
+            [formControl]="field.control"
+            [matDatepicker]="picker"
+            (focus)="picker.open()" />
+
+
+        <mat-datepicker #picker
+            touchUi></mat-datepicker>
+        <span class="suffix-fix">
+            <app-icon *ngIf="field.control.enabled"
+                name="calendar"
+                (click)="picker.open()"
+                [color]="MatColor.primary">
+            </app-icon>
+        </span>
+    </ng-container>
+
+
+    <ng-container *ngIf="field.type == types.dateRange">
+        <mat-date-range-input [formGroup]="field.control"
+            [rangePicker]="picker"
+            (click)="picker.open()">
+            <input matStartDate
+                formControlName="start"
+                placeholder="Start date">
+            <input matEndDate
+                formControlName="end"
+                placeholder="End date">
+        </mat-date-range-input>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+
+
+    </ng-container>
+
+
+    <ng-container *ngIf="field.type == types.blob">
+        <textarea matInput
+            tabindex="0"
+            (focus)="event('focus')"
+            (blur)="event('blur')"
+            `
+            [formControl]="field.control"
+            rows="6"></textarea>
+    </ng-container>
+
+
+    <ng-container *ngIf="field.type == types.select">
+        <mat-select [formControl]="field.control">
+            <mat-option *ngFor="let option of field.options"
+                [value]="option.id">{{ option | displaySelect }} </mat-option>
+        </mat-select>
+    </ng-container>
+
+    <ng-container *ngIf="field.type == types.autocomplete"></ng-container>
+
+
+
+    <ng-container *ngIf="field.hint != ''">
+        <mat-hint>{{ field.hint }}</mat-hint>
+    </ng-container>
+
+
+
+
+
+    <ng-container *ngIf="field.errors != null">
+        <mat-error *ngIf="field.controls.start.hasError('matStartDateInvalid')">Invalid start date</mat-error>
+        <mat-error *ngIf="field.controls.end.hasError('matEndDateInvalid')">Invalid end date</mat-error>
+    </ng-container>
+
+
+</mat-form-field>
